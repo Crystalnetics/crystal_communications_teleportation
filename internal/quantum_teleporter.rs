@@ -2,14 +2,14 @@ use std::collections::HashMap;
 
 pub struct QuantumTeleporter {
     qubits: HashMap<String, Vec<f64>>,
-    entangled_pairs: Vec<(String, String)>,
+    entangled_pairs: HashMap<String, String>,
 }
 
 impl QuantumTeleporter {
     pub fn new() -> QuantumTeleporter {
         QuantumTeleporter {
             qubits: HashMap::new(),
-            entangled_pairs: vec![],
+            entangled_pairs: HashMap::new(),
         }
     }
 
@@ -18,7 +18,8 @@ impl QuantumTeleporter {
     }
 
     pub fn entangle_qubits(&mut self, qubit1: String, qubit2: String) {
-        self.entangled_pairs.push((qubit1, qubit2));
+        self.entangled_pairs.insert(qubit1, qubit2);
+        self.entangled_pairs.insert(qubit2, qubit1);
     }
 
     pub fn teleport(&self, qubit: String) -> Option<String> {
