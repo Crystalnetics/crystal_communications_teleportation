@@ -1,16 +1,15 @@
-# Crystal-Teleportation-Communication
+# Crystal Teleportation
 
-Crystal-Teleportation is a software project that aims to teleport crystals using advanced quantum physics and tensor manipulation techniques.
+Crystal Teleportation is a software project that implements a quantum teleportation system for crystals. The system includes components for generating crystal frequencies, coordinating the teleportation process, rematerializing tensors, calculating tensor flight dynamics, and displaying results to the user.
 
-## Features
+Features
 
-Quantum teleportation of crystals
-Crystal frequency generation
-Coordination of teleportation events
-Tensor rematerialization
-Tensor flight dynamics simulation
-User-friendly interface
-Data storage and management
+- Generation of crystal frequencies using the *'CrystalFrequencyGenerator'* component
+- Coordination of the teleportation process using the *'TeleportationCoordinator'* component
+- Rematerialization of tensors using the *'TensorRematerialization'* component
+- Calculation of tensor flight dynamics using the *'TensorFlightDynamics'* component
+- Display of results to the user using the *'UserInterface'* component
+- Storage and retrieval of data using the *'DataStorage'* component
 
 ## Prerequisites
 
